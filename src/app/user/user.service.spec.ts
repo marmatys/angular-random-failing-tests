@@ -16,6 +16,10 @@ describe('UserService', () => {
     userService = TestBed.get(UserService);
   });
 
+  afterEach(() => {
+    sessionStorage.clear();
+  });
+
   it('currentUser should be empty when no data is fetched', () => {
     const user = userService.currentUser;
 
