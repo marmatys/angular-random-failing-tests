@@ -1,5 +1,23 @@
 # AngularRandomFailingTests
 
+Repository with example of random failing test in Jasmine/Karma. Created for post (TODO: add link to post after publishing).
+Custom Jasmine seed reporter is added. Due to it it's easier to spot which test is problematic.
+
+Git commits contains exact description of each step. Here is brief description:
+1. Initial commit - ng new - nothing special
+2. *.iml file added to .gitignore - nothing special
+3. Licence added - nothing special
+4. **karma-spec-reporter** added (for better output) + ChromeHeadless in karma.conf.js - very useful during finding failing test
+5. Tests without watch mode - nothing special
+6. Setting random order for jasmine
+7. Random failing test added - see UserService
+8. Custom jasmine reporter added - **karma-jasmine-seed-reporter**
+9. How to find failing test? Adding specific seed for jasmine in karma.conf.js
+10. Fixing test - clearing state
+11. Removing specific seed
+
+# CLI info
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
 
 ## Development server
